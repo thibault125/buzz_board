@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buzz Board - Digital Marketing Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <div class="header">
+            <div class="logo-container">
+                <img src="LOGO BUZZ BOARD.png" alt="Buzz Board Logo" class="logo">
+            </div>
+            <p class="header-subtitle">Question generator for board game</p>
+        </div>
+        
+        <div class="content">
+            <!-- Home Screen -->
+            <div id="home-screen" class="screen home-screen active">
+                <div class="team-info">
+                    <h3>Digital Marketing Quiz</h3>
+                    <p>Thibault DRUEZ, Lou-Anne HUGUET, Léa BERTIERI, Esteban (internship)</p>
+                </div>
+                <h2>Welcome to the Quiz</h2>
+                <p class="welcome-text">Generate a random digital marketing question for your board game.</p>
+                <div class="mode-options">
+                    <button id="easy-mode" class="btn">Easy Question</button>
+                    <button id="hard-mode" class="btn">Hard Question</button>
+                    <button id="rules-btn" class="btn btn-secondary">Game Rules</button>
+                    <button id="qr-btn" class="btn btn-secondary">QR Code</button>
+                </div>
+            </div>
+            
+            <!-- Question Screen -->
+            <div id="question-screen" class="screen question-screen">
+                <div class="mode-indicator" id="mode-indicator">Mode: Easy</div>
+                <div class="question-card">
+                    <div id="question-text" class="question-text">
+                        Loading question...
+                    </div>
+                    
+                    <div class="options-container" id="options-container">
+                        <!-- Options will be generated dynamically -->
+                    </div>
+                </div>
+                
+                <div class="feedback" id="feedback">
+                    <!-- Feedback will be displayed here -->
+                </div>
+                
+                <div class="navigation">
+                    <button id="new-question-btn" class="btn btn-secondary">New Question</button>
+                    <button id="back-btn" class="btn">Back to Home</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
